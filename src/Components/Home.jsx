@@ -14,20 +14,21 @@ const Home = () => {
   return (
     <div>
       <div>
+      {data.length===0?(
       <div>
         <SearchBar/>
-      </div>
+      </div>):(
         <div>
-        {/* <CardInfo
+        <SearchBar/>
+        <CardInfo
           name={data.name}
           actual={data.main.temp}
           img={data.weather[0].icon}
           sensacion={data.main.feels_like}
           description={data.weather[0].description}
           id={data.id}
-        /> */}
-        </div>
-        {/* <CardMain
+        />
+        <CardMain
           max={data.main.temp_max}
           min={data.main.temp_min}
           pressure={data.main.pressure}
@@ -35,8 +36,10 @@ const Home = () => {
           latitud={data.coord.lat}
           longitud={data.coord.lon}
           id={data.id}
-        /> */}
-        {/* <CardExt wind={data.wind.speed} clouds={data.clouds.all} id={data.id} /> */}
+        />
+        <CardExt wind={data.wind.speed} clouds={data.clouds.all} id={data.id} />
+      </div>
+      )}
       </div>
     </div>
   );

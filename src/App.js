@@ -1,11 +1,11 @@
 import React from 'react';
-import { Route } from "react-router-dom";
-import Home from './Components/Home'
+//import { Route } from "react-router-dom";
+import Home from './Components/Home.jsx'
 
 const App = () => {
   return (
     <div>
-      <Route path="/" component={Home}/>
+      <Home/>
     </div>
   )
 }
