@@ -1,0 +1,28 @@
+.cardinfo{
+    padding: 2rem 10rem 1rem;
+
+    .div{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid #000000;
+        border-radius: 1rem;
+        background-color: #dadada34;
+        padding: 0;
+        
+    }
+
+    .city{
+
+    }
+
+    .descrip{
+        display: flex;
+        align-items: center;
+    }
+
+    .temp{
+        display: flex;
+        align-items: center;
+    }
+}

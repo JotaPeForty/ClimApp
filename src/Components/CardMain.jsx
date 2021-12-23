@@ -1,25 +1,43 @@
 import React from "react";
+import { WiCelsius, WiHumidity } from "react-icons/wi";
+import "../Sass/CardMain.scss";
 
-const CardMain = ({id, max, min, pressure, humidity, latitud, longitud}) => {
+const CardMain = ({ id, max, min, pressure, humidity, latitud, longitud, wind, clouds }) => {
   return (
-    <div>
-      <div key={id}>
-        <div>
-          <p>Max</p>
-          <p>{Math.round(max)}</p>
-          <p>Min</p>
-          <p>{Math.round(min)}</p>
+    <div className="cardmain">
+      <div key={id} className="divm">
+        <div className="tempm">
+          <div>
+            <h4>Extended</h4>
+          </div>
+          <div className="tempm2">
+            <p>
+            
+              {Math.round(max)}
+              <WiCelsius />
+            </p>
+            <p>
+              {Math.round(min)}
+              <WiCelsius />
+            </p>
+          </div>
         </div>
-        <div>
-          <p>Pressure</p>
+        <div className="prehu">
+          <h4>Pressure</h4>
           <p>{pressure} hPa</p>
-          <p>Humidity</p>
-          <p>{humidity} %</p>
+          <h4>Humidity</h4>
+          <p>
+            {humidity} <WiHumidity />
+          </p>
         </div>
-        <div>
-          <p>Latitud</p>
+        <div className="prehu">
+          <h4>Wind</h4>
+          <p>{Math.round(wind)}</p>
+          <h4>Clouds</h4>
+          <p>{clouds}</p>
+        </div>
+        <div className="maps">
           <p>{latitud}</p>
-          <p>Longitud</p>
           <p>{longitud}</p>
         </div>
       </div>
