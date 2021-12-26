@@ -1,0 +1,110 @@
+.cardinfo {
+    padding: 0rem 10rem 2rem;
+    margin: 0;
+    margin-top: 1rem;
+    text-shadow: 1px 1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, -1px -1px 0 #FFFFFF, 1px 0px 0 #FFFFFF, 0px 1px 0 #FFFFFF, -1px 0px 0 #FFFFFF, 0px -2px 0 #FFFFFF;
+
+    @media screen and (max-width: 375px) {
+        padding: 0rem 5rem 2rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    .div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+
+    }
+
+
+    .descrip {
+        display: flex;
+        align-items: center;
+
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+    }
+
+    .temp {
+        display: flex;
+
+        .actual {
+            padding: 0;
+            //padding-right: 5rem;
+            padding-bottom: 2rem;
+            margin: 0;
+
+            h1 {
+                font-size: 4rem;
+                margin: 0;
+            }
+        }
+
+        .st {
+            padding: 0;
+            padding-left: 5rem;
+            padding-bottom: 2rem;
+            margin: 0;
+
+            h1 {
+                font-size: 3rem;
+                margin: 0;
+            }
+        }
+    }
+
+    .divm {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        //border-bottom: 1px solid #ffffff15;
+        border-radius: 1rem;
+        background-color: #ffffff65;
+        text-shadow: none;
+
+        @media screen and (max-width: 375px) {
+            flex-direction: column;
+            padding: 1rem 4rem;
+            text-align: center;
+        }
+            
+        
+
+        .tempm {
+
+            h2 {
+                align-items: center;
+                margin: 0;
+                padding: 0;
+            }
+
+            p {
+                margin: 0;
+                padding: 0;
+                font-weight: bold;
+                font-size: 25px;
+            }
+
+        }
+
+        .tempm2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+        }
+
+
+
+    }
+}

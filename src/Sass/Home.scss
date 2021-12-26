@@ -1,0 +1,140 @@
+.title{
+    margin-left: 1rem;
+    color: white;
+      text-shadow: 1px 1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, -1px -1px 0 #000000, 1px 0px 0 #000000, 0px 1px 0 #000000, -1px 0px 0 #000000, 0px -2px 0 #000000;
+    
+}
+
+.cloud{
+    background-image: url(../image/cloud.jpg);
+    background-size: cover;
+    background-position:  center center;
+    background-repeat:no-repeat;  
+    height: 100vh;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    overflow-y:hidden;
+
+}
+.clouds{
+    background-image: url(../image/clouds.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat:no-repeat;  
+    height: 100vh;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    overflow-y:hidden;
+
+}
+.earth{
+    background-image: url(../image/earth.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat:no-repeat;
+    height: 100vh;
+    width: auto;
+    display: flex;
+    align-items: center;
+    padding-left: 3rem;
+
+    @media screen and (max-width: 375px) {
+        flex-direction: column;
+    }
+
+}
+.hands{
+    background-image: url(../image/hands.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat:no-repeat;  
+    height: 100vh;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    overflow-y:hidden;
+
+
+}
+.niebla{
+    background-image: url(../image/niebla.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat:no-repeat;  
+    height: 100vh;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    overflow-y:hidden;
+
+
+}
+.landscape{
+    background-image: url(../image/landscape.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat:no-repeat;  
+    height: 100vh;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    overflow-y:hidden;
+
+}
+.lightning{
+    background-image: url(../image/lightning.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat:no-repeat; 
+    height: 100vh;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    overflow-y:hidden;
+
+}
+.nieve{
+    background-image: url(../image/nieve.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat:no-repeat;  
+    height: 100vh;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    overflow-y:hidden;
+
+}
+.rain{
+    background-image: url(../image/rain.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat:no-repeat;  
+    height: 100vh;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    overflow-y:hidden;
+
+}
+.refresh{
+    background-image: url(../image/refresh.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat:no-repeat;
+    height: 100vh;
+    width: auto;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    overflow-y:hidden;
+
+}
+
+.bar{
+    display: flex;
+    align-items: center;
+}
+
