@@ -26,7 +26,7 @@ const CardInfo = ({ name, actual, img, description, max, min, pressure, humidity
       <div className="divm">
         <div className="tempm">
           <div>
-            <h2>Pronostico</h2>
+            <h2>Pronóstico</h2>
           </div>
           <div className="tempm2">
             <p>
@@ -41,7 +41,7 @@ const CardInfo = ({ name, actual, img, description, max, min, pressure, humidity
           </div>
         </div>
         <div className="tempm">
-          <h2>Presion</h2>
+          <h2>Presión</h2>
           <p>{pressure} hPa</p>
          
         </div>
