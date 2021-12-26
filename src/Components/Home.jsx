@@ -3,56 +3,62 @@ import { useSelector } from "react-redux";
 import SearchBar from "./SearchBar";
 import SearchBar2 from "./SearchBar2";
 import CardInfo from "./CardInfo";
-import CardMain from "./CardMain";
 import "../Sass/Home.scss";
 
 const Home = () => {
   const data = useSelector((state) => state.data);
 
-   let clima
+  // let info={
+  //   name:"",
+  //   actual:"",
+  //   img:"",
+  //   description:"",
+  //   max:"",
+  //   min:"",
+  //   pressure:"",
+  //   humidity:"",
+  //   id:"",
+  // }
 
-  if(data.length===0){
-   clima = "earth"
-  }else if(data.weather[0].main==="Clear"){
-    clima = "refresh"
-  }else if(data.weather[0].main==="Clouds"){
-    clima = "clouds"
-  }else if(data.weather[0].main==="Fog"||"Mist"){
-    clima = "niebla"
-  }else if(data.weather[0].main==="Rain"){
-    clima = "rain"
-  }else if(data.weather[0].main==="Snow"){
-    clima = "nieve"
+  let clima;
+
+  if (data.length === 0) {
+    clima = "earth";
+  } else if (data.weather[0].main === "Clear") {
+    clima = "refresh";
+  } else if (data.weather[0].main === "Clouds") {
+    clima = "clouds";
+  } else if (data.weather[0].main === "Fog" || data.weather[0].main === "Mist") {
+    clima = "niebla";
+  } else if (data.weather[0].main === "Rain" || data.weather[0].main === "Drizzle") {
+    clima = "rain";
+  } else if (data.weather[0].main === "Snow") {
+    clima = "nieve";
   }
-
+console.log(data.name);
+console.log(clima);
   return (
     <div className={clima}>
       <div>
+        <div className="title">
+          <h1>C l i m A p p</h1>
+        </div>
         {data.length === 0 ? (
           <div>
             <SearchBar className="bar" />
           </div>
         ) : (
           <div>
-            <SearchBar2 className="bar2"/>
+            <SearchBar2 className="bar2" />
             <CardInfo
               name={data.name}
               actual={data.main.temp}
               img={data.weather[0].icon}
-              sensacion={data.main.feels_like}
               description={data.weather[0].description}
-              id={data.id}
-            />
-            <CardMain
               max={data.main.temp_max}
               min={data.main.temp_min}
               pressure={data.main.pressure}
               humidity={data.main.humidity}
-              latitud={data.coord.lat}
-              longitud={data.coord.lon}
-              id={data.id}
-              wind={data.wind.speed}
-              clouds={data.clouds.all}
             />
           </div>
         )}
@@ -62,16 +68,3 @@ const Home = () => {
 };
 
 export default Home;
-
-// min: Math.round(recurso.main.temp_min),
-//max: Math.round(recurso.main.temp_max),
-//actual: Math.round(recurso.main.temp),
-//sensacion: Math.round(recurso.main.feels_like),
-//pressure:recurso.main.pressure,
-//humidity:recurso.main.humidity,
-//img: recurso.weather[0].icon,
-//id: recurso.id,//wind: recurso.wind.speed,//direction: recurso.wind.deg,
-//name: recurso.name,//weather: recurso.weather[0].main,
-//description:recurso.weather[0].description,//clouds: recurso.clouds.all,
-//latitud: recurso.coord.lat,
-//longitud: recurso.coord.lon,

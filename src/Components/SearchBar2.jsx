@@ -11,6 +11,7 @@ export default function SearchBar() {
  function handleOnSearch (e) {
     e.preventDefault();
     setCity(e.target.value);
+    console.log(e.target.value);
   };
 
   function handleSubmit(e) {
@@ -18,6 +19,7 @@ export default function SearchBar() {
     dispatch(infoCity(city));
     setCity("")
   }
+console.log(setCity);
 console.log(city);
   return (
     <form onSubmit={handleSubmit} className="form2">
@@ -28,11 +30,14 @@ console.log(city);
         value={city}
         onChange={(e)=>handleOnSearch(e)}
         onKeyPress={(e) => {
-          if (e.key === "Enter") handleOnSearch(e);
+          if (e.key === "13") handleOnSearch(e);
         }}
       />
       <button type="submit"
         onClick={(e) => handleSubmit(e)}
+        onKeyPress={(e) => {
+          if (e.key === "13") handleSubmit(e);
+        }}
         className="button2">
         <FaExternalLinkAlt/>
       </button>

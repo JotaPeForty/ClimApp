@@ -28,7 +28,7 @@ export default function SearchBar() {
         value={city}
         onChange={(e) => handleOnSearch(e)}
         onKeyPress={(e) => {
-          if (e.key === "Enter") handleOnSearch(e);
+          if (e.key === "13") handleOnSearch(e);
         }}
       />
       <button type="submit" onClick={(e) => handleSubmit(e)} className="button">

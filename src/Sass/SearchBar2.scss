@@ -9,11 +9,11 @@
 }
 
 .input2{
-height: 3rem;
-width: 20rem;
+height: 2.5rem;
+width: 15rem;
 background-color: #dadada;
-font-size: 15px;
-border-radius: 1rem;
+font-size: 20px;
+border-radius: 0.7rem;
 }
 
 .button2{
@@ -23,4 +23,11 @@ border-radius: 1rem;
 font-size: 15px;
 background-color: #dadada;
 text-align: center;
+display: none;
+
+@media screen and (max-width: 375px) {
+    display: revert;
+
+    
+}
 }

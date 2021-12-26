@@ -1,24 +1,56 @@
 import React from "react";
-import { WiCelsius } from "react-icons/wi";
 import "../Sass/CardInfo.scss";
 
-const CardInfo = ({id, name, actual, img, sensacion, description}) => {
+const CardInfo = ({ name, actual, img, description, max, min, pressure, humidity }) => {
   return (
     <div className="cardinfo">
-      <div key={id} className="div">
-          <div className="city"><h1>{name}</h1></div>
-          <div className="descrip">
+      <div className="div">
+        <div className="city">
+          <h1>{name}</h1>
+        </div>
+        <div className="descrip">
           <h1>{description}</h1>
-          <img 
-          src={`http://openweathermap.org/img/wn/${img}@2x.png`}
-          width="200"
-          height="200"
-          alt="icon"/>
+          <img
+            src={`http://openweathermap.org/img/wn/${img}@2x.png`}
+            width="150"
+            height="150"
+            alt="icon"
+          />
+        </div>
+        <div className="temp">
+          <div className="actual">
+            <h1>{Math.round(actual)}°C</h1>
           </div>
-          <div className="temp">
-          <h1>{Math.round(actual)}<WiCelsius/></h1>
-          <h1>ST:{Math.round(sensacion)}<WiCelsius/></h1>
+        </div>
+      </div>
+      <div className="divm">
+        <div className="tempm">
+          <div>
+            <h2>Pronostico</h2>
           </div>
+          <div className="tempm2">
+            <p>
+               {Math.round(max)}
+              °C
+            </p>
+            <hr/>
+            <p> 
+              {Math.round(min)}
+              °C
+            </p>
+          </div>
+        </div>
+        <div className="tempm">
+          <h2>Presion</h2>
+          <p>{pressure} hPa</p>
+         
+        </div>
+        <div className="tempm">
+        <h2>Humedad</h2>
+          <p>
+            {humidity} %
+          </p>
+        </div>
       </div>
     </div>
   );
