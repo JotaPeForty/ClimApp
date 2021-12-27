@@ -6,6 +6,9 @@
     height: 100%;
     padding: 0px 10px;
     padding-top: 1rem;
+    @media screen and (max-width: 375px) {
+        justify-content: center  
+    }
 }
 
 .input2{
@@ -14,6 +17,7 @@ width: 15rem;
 background-color: #dadada;
 font-size: 20px;
 border-radius: 0.7rem;
+
 }
 
 .button2{

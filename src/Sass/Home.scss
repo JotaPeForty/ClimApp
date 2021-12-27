@@ -1,39 +1,46 @@
-.title{
+.title {
     margin-left: 1rem;
     color: white;
-      text-shadow: 1px 1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, -1px -1px 0 #000000, 1px 0px 0 #000000, 0px 1px 0 #000000, -1px 0px 0 #000000, 0px -2px 0 #000000;
-    
+    text-shadow: 1px 1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, -1px -1px 0 #000000, 1px 0px 0 #000000, 0px 1px 0 #000000, -1px 0px 0 #000000, 0px -2px 0 #000000;
+
+    @media screen and (max-width: 375px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
-.cloud{
+.cloud {
     background-image: url(../image/cloud.jpg);
     background-size: cover;
-    background-position:  center center;
-    background-repeat:no-repeat;  
+    background-position: center center;
+    background-repeat: no-repeat;
     height: 100vh;
-    margin:0;
-    padding:0;
-    overflow-x:hidden;
-    overflow-y:hidden;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
 
 }
-.clouds{
+
+.clouds {
     background-image: url(../image/clouds.jpg);
     background-size: cover;
     background-position: center center;
-    background-repeat:no-repeat;  
+    background-repeat: no-repeat;
     height: 100vh;
-    margin:0;
-    padding:0;
-    overflow-x:hidden;
-    overflow-y:hidden;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
 
 }
-.earth{
+
+.earth {
     background-image: url(../image/earth.jpg);
     background-size: cover;
     background-position: center center;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     height: 100vh;
     width: auto;
     display: flex;
@@ -42,99 +49,107 @@
 
     @media screen and (max-width: 375px) {
         flex-direction: column;
+        justify-content: center;
+        padding: 0;
     }
 
 }
-.hands{
+
+.hands {
     background-image: url(../image/hands.jpg);
     background-size: cover;
     background-position: center center;
-    background-repeat:no-repeat;  
+    background-repeat: no-repeat;
     height: 100vh;
-    margin:0;
-    padding:0;
-    overflow-x:hidden;
-    overflow-y:hidden;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
 
 
 }
-.niebla{
+
+.niebla {
     background-image: url(../image/niebla.jpg);
     background-size: cover;
     background-position: center center;
-    background-repeat:no-repeat;  
+    background-repeat: no-repeat;
     height: 100vh;
-    margin:0;
-    padding:0;
-    overflow-x:hidden;
-    overflow-y:hidden;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
 
 
 }
-.landscape{
+
+.landscape {
     background-image: url(../image/landscape.jpg);
     background-size: cover;
     background-position: center center;
-    background-repeat:no-repeat;  
+    background-repeat: no-repeat;
     height: 100vh;
-    margin:0;
-    padding:0;
-    overflow-x:hidden;
-    overflow-y:hidden;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
 
 }
-.lightning{
+
+.lightning {
     background-image: url(../image/lightning.jpg);
     background-size: cover;
     background-position: center center;
-    background-repeat:no-repeat; 
+    background-repeat: no-repeat;
     height: 100vh;
-    margin:0;
-    padding:0;
-    overflow-x:hidden;
-    overflow-y:hidden;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
 
 }
-.nieve{
+
+.nieve {
     background-image: url(../image/nieve.jpg);
     background-size: cover;
     background-position: center bottom;
-    background-repeat:no-repeat;  
+    background-repeat: no-repeat;
     height: 100vh;
-    margin:0;
-    padding:0;
-    overflow-x:hidden;
-    overflow-y:hidden;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
 
 }
-.rain{
+
+.rain {
     background-image: url(../image/rain.jpg);
     background-size: cover;
     background-position: center bottom;
-    background-repeat:no-repeat;  
+    background-repeat: no-repeat;
     height: 100vh;
-    margin:0;
-    padding:0;
-    overflow-x:hidden;
-    overflow-y:hidden;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
 
 }
-.refresh{
+
+.refresh {
     background-image: url(../image/refresh.jpg);
     background-size: cover;
     background-position: center bottom;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     height: 100vh;
     width: auto;
-    margin:0;
-    padding:0;
-    overflow-x:hidden;
-    overflow-y:hidden;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
 
 }
 
-.bar{
+.bar {
     display: flex;
     align-items: center;
 }
-
