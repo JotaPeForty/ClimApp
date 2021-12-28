@@ -8,18 +8,6 @@ import "../Sass/Home.scss";
 const Home = () => {
   const data = useSelector((state) => state.data);
 
-  // let info={
-  //   name:"",
-  //   actual:"",
-  //   img:"",
-  //   description:"",
-  //   max:"",
-  //   min:"",
-  //   pressure:"",
-  //   humidity:"",
-  //   id:"",
-  // }
-
   let clima;
 
   if (data.length === 0) {
@@ -35,8 +23,7 @@ const Home = () => {
   } else if (data.weather[0].main === "Snow") {
     clima = "nieve";
   }
-console.log(data.name);
-console.log(clima);
+
   return (
     <div className={clima}>
       <div>
