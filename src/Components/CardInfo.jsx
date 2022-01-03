@@ -9,13 +9,11 @@ const CardInfo = ({ name, actual, img, description, max, min, pressure, humidity
           <h1>{name}</h1>
         </div>
         <div className="descrip">
-          <h1>{description}</h1>
           <img
             src={`http://openweathermap.org/img/wn/${img}@2x.png`}
-            width="150"
-            height="150"
             alt="icon"
           />
+          <h1>{description}</h1>
         </div>
         <div className="temp">
           <div className="actual">

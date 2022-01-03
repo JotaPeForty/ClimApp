@@ -3,6 +3,8 @@ import { useSelector } from "react-redux";
 import SearchBar from "./SearchBar";
 import SearchBar2 from "./SearchBar2";
 import CardInfo from "./CardInfo";
+import NavBar from "./NavBar";
+
 import "../Sass/Home.scss";
 
 const Home = () => {
@@ -26,15 +28,22 @@ const Home = () => {
 
   return (
     <div className={clima}>
+    <NavBar className="navbar"/>
       <div>
-        <div className="title">
+        {data.length === 0 ? (
+          <>
+          <div className="title">
           <h1>C l i m A p p</h1>
         </div>
-        {data.length === 0 ? (
           <div>
             <SearchBar className="bar" />
           </div>
+          </>
         ) : (
+          <>
+          <div className="title2">
+          <h1>C l i m A p p</h1>
+        </div>
           <div>
             <SearchBar2 className="bar2" />
             <CardInfo
@@ -48,6 +57,7 @@ const Home = () => {
               humidity={data.main.humidity}
             />
           </div>
+          </>
         )}
       </div>
     </div>
