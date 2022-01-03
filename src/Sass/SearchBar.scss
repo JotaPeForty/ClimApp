@@ -18,12 +18,16 @@ font-size: 25px;
 color: white;
 border-radius: 1rem;
 
+@media screen and (max-width: 500px) {
+    height: 4rem;
+    width: 15rem;   
+}
+
 @media screen and (max-width: 375px) {
     height: 4rem;
-    width: 15rem;
-    
-        
+    width: 15rem;   
 }
+
 }
 
 .button{
@@ -36,9 +40,11 @@ background-color: transparent;
 text-align: center;
 display: none;
 
-@media screen and (max-width: 375px) {
-    display: revert;
-
-    
+@media screen and (max-width: 500px) {
+    display: revert;  
 }
+@media screen and (max-width: 375px) {
+    display: revert;  
+}
+
 }

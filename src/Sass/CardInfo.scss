@@ -4,6 +4,9 @@
     margin-top: 1rem;
     text-shadow: 1px 1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, -1px -1px 0 #FFFFFF, 1px 0px 0 #FFFFFF, 0px 1px 0 #FFFFFF, -1px 0px 0 #FFFFFF, 0px -2px 0 #FFFFFF;
 
+    @media screen and (max-width: 500px) {
+        padding: 0rem 5rem 2rem;
+    }
     @media screen and (max-width: 375px) {
         padding: 0rem 5rem 2rem;
     }
@@ -19,9 +22,15 @@
         justify-content: space-between;
         align-items: center;
         padding: 0;
+
+        @media screen and (max-width: 500px) {
+            justify-content: center  
+        }
+        
         @media screen and (max-width: 375px) {
             justify-content: center  
         }
+
     }
 
 
@@ -48,6 +57,15 @@
                 font-size: 4rem;
                 margin: 0;
             }
+
+            @media screen and (max-width: 500px) {
+                padding-bottom: 0;
+            }
+    
+            @media screen and (max-width: 375px) {
+                padding-bottom: 0;
+            }
+
         }
 
         .st {
@@ -73,9 +91,15 @@
         background-color: #ffffff65;
         text-shadow: none;
 
+        @media screen and (max-width: 500px) {
+            flex-direction: column;
+            padding: 0.7rem 4rem;
+            text-align: center;
+        }
+
         @media screen and (max-width: 375px) {
             flex-direction: column;
-            padding: 1rem 4rem;
+            padding: 0.7rem 4rem;
             text-align: center;
         }
             

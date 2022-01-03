@@ -6,9 +6,15 @@
     height: 100%;
     padding: 0px 10px;
     padding-top: 1rem;
+
+    @media screen and (max-width: 500px) {
+        justify-content: center  
+    }
+
     @media screen and (max-width: 375px) {
         justify-content: center  
     }
+
 }
 
 .input2{
@@ -29,9 +35,11 @@ background-color: #dadada;
 text-align: center;
 display: none;
 
+@media screen and (max-width: 500px) {
+    display: revert;
+}
 @media screen and (max-width: 375px) {
     display: revert;
-
-    
 }
+
 }
