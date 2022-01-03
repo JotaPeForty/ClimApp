@@ -15,10 +15,16 @@
     justify-content: space-between;
     align-items: center;
     margin-left: 1rem;
-    margin-top: 17rem;
+    margin-top: 24rem;
     color: white;
     text-shadow: 1px 1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, -1px -1px 0 #000000, 1px 0px 0 #000000, 0px 1px 0 #000000, -1px 0px 0 #000000, 0px -2px 0 #000000;
 
+    @media screen and (max-width: 1360px) {
+        margin-top: 17rem;
+    }
+    @media screen and (max-width: 1024px) {
+        margin-top: 17rem;
+    }
     @media screen and (max-width: 500px) {
         display: flex;
         justify-content: center;
